@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/site-icon.css">
+
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+
+    <title>Online Radio | ELARIN.RU</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+<aside class="sidebar close">
+    <header>
+        <div class="image__text">
+            <span class="image">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <rect width="512" height="512"/>
+                    <path d="M394.52,280.41c16.29-12.57,24.67-27,24.67-43.29v-1.86c0-8.38-2.33-16.29-7-25.13-11.17-16.29-25.13-24.21-42.36-24.21H285.14a122.23,122.23,0,0,0-20.94-31.18c-20.48-19.55-43.75-28.86-70.28-28.86A98,98,0,0,0,145,138.45q-16,8.37-30.71,26.53v.46h77.72c15.36,0,28.86,4.66,40,14,14.43,13,21.88,27.92,21.88,46.08v1.86c0,11.63-3.73,23.27-10.71,34-13,17.22-29.32,25.6-48.87,25.6a60.58,60.58,0,0,1-34-10.24c-17.68-13-26.53-29.79-26.53-49.81V226c0-4.19.93-10.7,2.33-19.55a21.6,21.6,0,0,0-.46-4.65c-3.26-10.71-9.78-16.29-19.09-16.29h-1.86c-6.52,0-12.1,3.72-16.76,10.7A89.06,89.06,0,0,0,93.38,226c0,27,9.77,51.2,29.79,71.22C143.65,316.71,166.92,326,193.45,326c19.08,0,36.31-4.65,51.67-14.43v55.86a40.69,40.69,0,0,0,.93,5.12c4.18,8.84,10.24,13.5,18.15,13.5h.93a6.84,6.84,0,0,0,3.26-.47q16.75-4.19,16.75-21V266a98.48,98.48,0,0,0,8.38-40.49V225h77.27c5.11,1.86,7.44,5.12,7.44,9.78v.46a9,9,0,0,1-1.86,5.59L331.22,283.2c-17.68,14-26.53,28.86-26.53,46.08v4.19q0,13.26,8.38,27.93c12.1,16.29,27,24.67,44.68,24.67h41.43a17.7,17.7,0,0,0,7.91-1.87C414.54,380,418.73,374,418.73,367v-1.86a9,9,0,0,0-.47-3.26C415,351.16,408,346,398.25,346h-39.1c-2.33,0-3.72,0-4.66-.47-7-2.79-10.7-7.45-10.7-13.5a14.34,14.34,0,0,1,2.79-8.84C348.44,321.37,363.8,307.41,394.52,280.41Z" style="fill: #fff"/>
+                </svg>
+            </span>
+            <div class="text header__text">
+                <span class="title">Online Radio</span>
+                <span class="email">Версия 1.0.0</span>
+            </div>
+        </div>
+        <i class="toggle icon icon-chevron_right"></i>
+    </header>
+
+    <div class="menu__bar">
+        <div class="menu">
+           <li class="search__box">
+                <i class="sidebar__icon icon icon-search"></i>
+                <input type="search" placeholder="Поиск...">
+            </li>
+            <ul class="menu__links">
+                <li class="nav__link">
+                    <a href="#">
+                        <i class="sidebar__icon icon icon-home"></i>
+                        <span class="text nav__text">Главная</span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="#">
+                        <i class="sidebar__icon icon icon-mic-on"></i>
+                        <span class="text nav__text">Программы</span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="#">
+                        <i class="sidebar__icon icon icon-user"></i>
+                        <span class="text nav__text">Ведущие</span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="#">
+                        <i class="sidebar__icon icon icon-file-text"></i>
+                        <span class="text nav__text">Новости</span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="#">
+                        <i class="sidebar__icon icon icon-play"></i>
+                        <span class="text nav__text">Online</span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="#">
+                        <i class="sidebar__icon icon icon-map-pin"></i>
+                        <span class="text nav__text">Контакты</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom__content">
+            <li class="mode">
+                <div class="moon-sun">
+                    <i class="sidebar__icon icon icon-moon moon"></i>
+                    <i class="sidebar__icon icon icon-sun sun"></i>
+                </div>
+                <span class="text mode-text">Dark Mode</span>
+                <div class="toggle-switch">
+                    <span class="switch"></span>
+                </div>
+            </li>
+        </div>
+    </div>
+</aside>
+
+<main class="main">
+    <div class="page">
+        <div class="radioblock" >
+            <div style="display: block; position: relative; overflow: hidden; width: 100%; height: 100%; flex: 1 1 auto;">
+                <div style="inset: 0px;overflow: scroll; margin-right: -17px; margin-bottom: -17px;">
+                    <div class="scrollbar__content">
+                        <div class="station__container">
+                            <div class="station__list"><!-- station__list -->
+
+                                <div class="station__card active" tabindex="0"><!-- = Радио ШТАНЫ = -->
+                                    <div class="station__card_status">On air</div>
+                                    <div class="station__card_wrapper">
+                                        <div class="station__card_styled-link">
+                                            <div class="styled__icon-wrapper"></div>
+                                            <div class="station__card_double-logo">
+                                                <img class="station__card_logo mono-logo" src="images/radiostation/radio-shtani_white.svg" alt="Логотип радиостанции Радио ШТАНЫ" aria-hidden="false">
+                                                <img class="station__card_logo color-logo" src="images/radiostation/radio-shtani_color.svg" alt="Логотип радиостанции Радио ШТАНЫ" aria-hidden="true">
+                                            </div><!--END .station__card_double-logo-->
+                                        </div>
+                                    </div><!--END .station__card_wrapper-->
+                                    <div class="station__card_styled-link" href="#">
+                                        <div class="station__card_wrapper-text">
+                                            <div class="station__card_station-name">Радио ШТАНЫ - Россия</div>
+                                            <div class="station__card_station-frequency">Пенза</div>
+                                        </div>
+                                    </div>
+                                </div><!--END .station__card-->
+
+                                <div class="station__card" tabindex="0"><!-- = Новое Радио = -->
+                                    <div class="station__card_status">On air</div>
+                                    <div class="station__card_wrapper">
+                                        <div class="station__card_styled-link">
+                                            <div class="styled__icon-wrapper"></div>
+                                            <div class="station__card_double-logo">
+                                                <img class="station__card_logo mono-logo" src="images/radiostation/novoe-radio_white.svg" alt="Логотип радиостанции Новое Радио" aria-hidden="false">
+                                                <img class="station__card_logo color-logo" src="images/radiostation/novoe-radio_color.svg" alt="Логотип радиостанции Новое Радио" aria-hidden="true">
+                                            </div><!--END .station__card_double-logo-->
+                                        </div>
+                                    </div><!--END .station__card_wrapper-->
+                                    <div class="station__card_styled-link" href="#">
+                                        <div class="station__card_wrapper-text">
+                                            <div class="station__card_station-name">Новое Радио - Россия</div>
+                                            <div class="station__card_station-frequency"></div>
+                                        </div>
+                                    </div>
+                                </div><!--END .station__card-->
+
+                                <div class="station__card" tabindex="0"><!-- = Авторадио = -->
+                                    <div class="station__card_status">On air</div>
+                                    <div class="station__card_wrapper">
+                                        <div class="station__card_styled-link">
+                                            <div class="styled__icon-wrapper"></div>
+                                            <div class="station__card_double-logo">
+                                                <img class="station__card_logo mono-logo" src="images/radiostation/avtoradio_white.svg" alt="Логотип радиостанции Авторадио" aria-hidden="false">
+                                                <img class="station__card_logo color-logo" src="images/radiostation/avtoradio_color.svg" alt="Логотип радиостанции Авторадио" aria-hidden="true">
+                                            </div><!--END .station__card_double-logo-->
+                                        </div>
+                                    </div><!--END .station__card_wrapper-->
+                                    <div class="station__card_styled-link" href="#">
+                                        <div class="station__card_wrapper-text">
+                                            <div class="station__card_station-name">Авторадио - Россия</div>
+                                            <div class="station__card_station-frequency"></div>
+                                        </div>
+                                    </div>
+                                </div><!--END .station__card-->
+
+                                <div class="station__card" tabindex="0"><!-- = Дорожное радио = -->
+                                    <div class="station__card_status">On air</div>
+                                    <div class="station__card_wrapper">
+                                        <div class="station__card_styled-link">
+                                            <div class="styled__icon-wrapper"></div>
+                                            <div class="station__card_double-logo">
+                                                <img class="station__card_logo mono-logo" src="images/radiostation/dorozhnoe-radio_white.svg" alt="Логотип радиостанции Дорожное радио" aria-hidden="false">
+                                                <img class="station__card_logo color-logo" src="images/radiostation/dorozhnoe-radio_color.svg" alt="Логотип радиостанции Дорожное радио" aria-hidden="true">
+                                            </div><!--END .station__card_double-logo-->
+                                        </div>
+                                    </div><!--END .station__card_wrapper-->
+                                    <div class="station__card_styled-link" href="#">
+                                        <div class="station__card_wrapper-text">
+                                            <div class="station__card_station-name">Дорожное радио - Россия</div>
+                                            <div class="station__card_station-frequency"></div>
+                                        </div>
+                                    </div>
+                                </div><!--END .station__card-->
+
+                                <div class="station__card" tabindex="0"><!-- = Europa Plus = -->
+                                    <div class="station__card_status">On air</div>
+                                    <div class="station__card_wrapper">
+                                        <div class="station__card_styled-link">
+                                            <div class="styled__icon-wrapper"></div>
+                                            <div class="station__card_double-logo">
+                                                <img class="station__card_logo mono-logo" src="images/radiostation/europa-plus_white.svg" alt="Логотип радиостанции Europa Plus" aria-hidden="false">
+                                                <img class="station__card_logo color-logo" src="images/radiostation/europa-plus_color.svg" alt="Логотип радиостанции Europa Plus" aria-hidden="true">
+                                            </div><!--END .station__card_double-logo-->
+                                        </div>
+                                    </div><!--END .station__card_wrapper-->
+                                    <div class="station__card_styled-link" href="#">
+                                        <div class="station__card_wrapper-text">
+                                            <div class="station__card_station-name">Europa Plus - Россия</div>
+                                            <div class="station__card_station-frequency"></div>
+                                        </div>
+                                    </div>
+                                </div><!--END .station__card-->
+
+                                <div class="station__card" tabindex="0"><!-- = Красноярск Главный = -->
+                                    <div class="station__card_status">On air</div>
+                                    <div class="station__card_wrapper">
+                                        <div class="station__card_styled-link">
+                                            <div class="styled__icon-wrapper"></div>
+                                            <div class="station__card_double-logo">
+                                                <img class="station__card_logo mono-logo" src="images/radiostation/krasnoyarsk-glavny_white.svg" alt="Логотип радиостанции Красноярск Главный" aria-hidden="false">
+                                                <img class="station__card_logo color-logo" src="images/radiostation/krasnoyarsk-glavny_color.svg" alt="Логотип радиостанции Красноярск Главный" aria-hidden="true">
+                                            </div><!--END .station__card_double-logo-->
+                                        </div>
+                                    </div><!--END .station__card_wrapper-->
+                                    <div class="station__card_styled-link" href="#">
+                                        <div class="station__card_wrapper-text">
+                                            <div class="station__card_station-name">Красноярск Главный - Красноярск</div>
+                                            <div class="station__card_station-frequency">102.8 FM</div>
+                                        </div>
+                                    </div>
+                                </div><!--END .station__card-->
+
+                                <div class="station__card" tabindex="0"><!-- = Радио ENERGY = -->
+                                    <div class="station__card_status">On air</div>
+                                    <div class="station__card_wrapper">
+                                        <div class="station__card_styled-link">
+                                            <div class="styled__icon-wrapper"></div>
+                                            <div class="station__card_double-logo">
+                                                <img class="station__card_logo mono-logo" src="images/radiostation/radio-energy_white.svg" alt="Логотип радиостанции Радио ENERGY" aria-hidden="false">
+                                                <img class="station__card_logo color-logo" src="images/radiostation/radio-energy_color.svg" alt="Логотип радиостанции Радио ENERGY" aria-hidden="true">
+                                            </div><!--END .station__card_double-logo-->
+                                        </div>
+                                    </div><!--END .station__card_wrapper-->
+                                    <div class="station__card_styled-link" href="#">
+                                        <div class="station__card_wrapper-text">
+                                            <div class="station__card_station-name">Радио ENERGY - Россия</div>
+                                            <div class="station__card_station-frequency"></div>
+                                        </div>
+                                    </div>
+                                </div><!--END .station__card-->
+
+                                <div class="station__card" tabindex="0"><!-- = Радио Record = -->
+                                    <div class="station__card_status">On air</div>
+                                    <div class="station__card_wrapper">
+                                        <div class="station__card_styled-link">
+                                            <div class="styled__icon-wrapper"></div>
+                                            <div class="station__card_double-logo">
+                                                <img class="station__card_logo mono-logo" src="images/radiostation/radio-record_white.svg" alt="Логотип радиостанции Радио Record" aria-hidden="false">
+                                                <img class="station__card_logo color-logo" src="images/radiostation/radio-record_color.svg" alt="Логотип радиостанции Радио Record" aria-hidden="true">
+                                            </div><!--END .station__card_double-logo-->
+                                        </div>
+                                    </div><!--END .station__card_wrapper-->
+                                    <div class="station__card_styled-link" href="#">
+                                        <div class="station__card_wrapper-text">
+                                            <div class="station__card_station-name">Радио Record - Россия</div>
+                                            <div class="station__card_station-frequency"></div>
+                                        </div>
+                                    </div>
+                                </div><!--END .station__card-->
+
+                                <div class="station__card" tabindex="0"><!-- = Юмор FM = -->
+                                    <div class="station__card_status">On air</div>
+                                    <div class="station__card_wrapper">
+                                        <div class="station__card_styled-link">
+                                            <div class="styled__icon-wrapper"></div>
+                                            <div class="station__card_double-logo">
+                                                <img class="station__card_logo mono-logo" src="images/radiostation/yumor-fm_white.svg" alt="Логотип радиостанции Юмор FM" aria-hidden="false">
+                                                <img class="station__card_logo color-logo" src="images/radiostation/yumor-fm_color.svg" alt="Логотип радиостанции Юмор FM" aria-hidden="true">
+                                            </div><!--END .station__card_double-logo-->
+                                        </div>
+                                    </div><!--END .station__card_wrapper-->
+                                    <div class="station__card_styled-link" href="#">
+                                        <div class="station__card_wrapper-text">
+                                            <div class="station__card_station-name">Юмор FM - Россия</div>
+                                            <div class="station__card_station-frequency"></div>
+                                        </div>
+                                    </div>
+                                </div><!--END .station__card-->
+
+                            </div><!--END .station__list-->
+
+                        </div><!--END .station__container-->
+                    </div><!--.END .scrollbar__content-->
+                </div>
+            </div>
+        </div><!--./RadioContent -->
+    </div>
+</main>
+
+
+<!-- JS -->
+<script src="js/app.js"></script>
+<script src="js/slick.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+

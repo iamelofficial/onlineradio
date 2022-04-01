@@ -1,0 +1,334 @@
+// main: ../style.less
+
+.radioblock {
+    flex: 1 1 auto;
+    //width: 1110px;
+    display: flex;
+    flex-direction: column;
+}
+
+.scrollbar__content {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    min-height: 100%;
+    font-size: 1.4rem;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.station__container {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.station{
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        font-size: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 20rem;
+        height: 29rem;
+        box-sizing: border-box;
+        padding-top: 3rem;
+        margin: 0 1.1rem;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+
+        &:hover {
+            .station__card {
+                &_logo {
+                    &.mono-logo {
+                        opacity: 0;
+                    }
+
+                    &.color-logo {
+                        opacity: 1;
+                    }
+                }
+
+                &_wrapper {
+                    background: rgba(255, 255, 255, 0.8);
+                }
+
+                &_station {
+                    &-name {
+                        color: rgba(var(--sidebar-color));
+                    }
+                }
+            }
+        }
+
+        &.active {
+            .station__card {
+                &_status {
+                    top: 6px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+                &_logo {
+                    &.mono-logo {
+                        opacity: 0;
+                    }
+
+                    &.color-logo {
+                        opacity: 1;
+                    }
+                }
+
+                &_wrapper {
+                    background: rgba(255, 255, 255, 1);
+                }
+
+                &_station {
+                    &-name {
+                        color: rgba(var(--sidebar-color));
+                    }
+                }
+            }
+        }
+
+        &_status {
+            display: block;
+            position: absolute;
+            padding: 5px 10px;
+            color: @white;
+            .ttu;
+            border-radius: 5rem;
+            background: red;
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(50%);
+            transition: .2s;
+        }
+
+        &_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 16rem;
+            height: 16rem;
+            border-radius: 10%;
+            background: rgba(var(--secondary-color), 0.095);
+            box-shadow: inset 2.01px -2.01px 20px rgba(var(--stationlogowrapper-color), 0.17), inset -3.01333px 3.01333px 3.01333px rgba(var(--stationlogowrapper-color), 0.39);
+            backdrop-filter: blur(74.4293px);
+            transition: all 1s ease 0s;
+
+            &-text {
+                margin-top: 2rem;
+                .text-center;
+                max-width: 100%;
+                transition: .2s;
+            }
+        }
+
+        &_styled-link {
+            //color: rgba(var(--stationlogowrapper-color));
+            text-decoration: none;
+
+            .styled__icon-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                flex: 0 0 auto;
+                border-radius: 10%;
+                transition: .2s;
+            }
+        }
+
+        &_double-logo {
+            display: block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        &_logo {
+            &.mono-logo {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+                transition: .3s;
+            }
+
+            &.color-logo {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: .3s;
+            }
+        }
+
+        &_station {
+            &-name {
+                color: rgba(var(--stationlogowrapper-color));
+                font-size: 2rem;
+                line-height: 2.2rem;
+                .text-center;
+                transition: color .2s;
+            }
+            &-frequency {
+                color: rgba(var(--stationlogowrapper-color));
+                font-size: 1.4rem;
+                margin-top: .5rem;
+                transition: color .2s;
+            }
+        }
+    }
+}
+
+.StationCard__Station {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    height: 29rem;
+    box-sizing: border-box;
+    padding-top: 3rem;
+    margin: 0 1.1rem;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+
+    &:hover {
+        .StationCardPrimitives__MonochromeStationLogo {
+
+            &.jSHixy {
+                opacity: 0;
+            }
+
+            &.dKFnYU {
+                opacity: 1;
+            }
+        }
+        .StationCardPrimitives__StationLogoWrapper {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .StationCardPrimitives__StationName {
+            color: rgba(var(--sidebar-color));
+        }
+    }
+
+    &.active {
+
+        .StationCardPrimitives__StationLogoWrapper {
+            background: rgba(255, 255, 255, 1);
+        .StationCardPrimitives__MonochromeStationLogo {
+
+            &.jSHixy {
+                opacity: 0;
+            }
+
+            &.dKFnYU {
+                opacity: 1;
+            }
+        }
+    }
+
+        .StationCardPrimitives__StationLogoWrapper {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .StationCardPrimitives__StationName {
+            color: rgba(var(--sidebar-color));
+        }
+    }
+}
+
+.StationCardPrimitives__StationLogoWrapper {
+    width: 16rem;
+    height: 16rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background: rgba(var(--secondary-color), 0.095);
+    box-shadow: inset 2.01px -2.01px 20px rgba(var(--stationlogowrapper-color), 0.17), inset -3.01333px 3.01333px 3.01333px rgba(var(--stationlogowrapper-color), 0.39);
+    backdrop-filter: blur(74.4293px);
+
+    transition: all 1s ease 0s;
+}
+
+.StationCardPrimitives__StyledLink {
+    color: rgba(var(--stationlogowrapper-color));
+    text-decoration: none;
+}
+
+.StyledPrimitives__IconWrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    flex: 0 0 auto;
+}
+
+.StationCardPrimitives__DoubleStationLogo {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.StationCardPrimitives__MonochromeStationLogo {
+
+    &.jSHixy {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+    }
+
+     &.dKFnYU {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+.StationCard__StationTextWrapper {
+    margin-top: 2rem;
+    text-align: center;
+    max-width: 100%;
+}
+
+.StationCardPrimitives__StationName {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    text-align: center;
+
+    transition: all .3s ease 0s;
+}
+
+.StationCardPrimitives__Frequency {
+    font-size: 1.4rem;
+    margin-top: .5rem;
+}

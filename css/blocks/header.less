@@ -1,0 +1,111 @@
+// main: ../style.less
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    width: 1170px;
+    height: 60px;
+    margin: 30px auto;
+    padding: 15px;
+    //z-index: @z-index-header;
+    border-radius: 10px;
+
+    background-color: @white;
+    //box-shadow: 7px 7px 10px 0px rgba(@lightblue2, .5);
+    box-shadow: 0px 0px 20px 15px rgba(@lightblue2, .3);
+}
+
+.header__main {
+    display: flex;
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-right: 10px;
+
+        border-right: 1px solid transparent;
+        border-image: linear-gradient(0deg, rgba(169,169,169,0) 0%, #a9a9a9 50%, rgba(169,169,169,0) 100%);
+        border-image-slice: 5;
+        img {
+            height: 60px;
+            padding-right: 10px;
+        }
+    }
+
+    &__player {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 725px;
+        height: 100%;
+
+        padding: 0 30px;
+
+        font-size: 16px;
+
+        margin-right: 15px;
+
+        //background-color: rgba(@cv3, .2);
+    }
+
+    &__contacts {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        &__phone {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            color: @cv2;
+            a {
+                font-size: 20px;
+                font-weight: bold;
+                color: @cv3;
+                margin-left: 5px;
+                transition: .2s;
+
+                &:hover {
+                    color: @cv3;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &__social {
+            display: block;
+            font-size: 20px;
+            color: @gray;
+
+            a {
+                margin-right: 5px;
+                transition: .2s;
+
+                &:hover {
+                    color: @red;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
